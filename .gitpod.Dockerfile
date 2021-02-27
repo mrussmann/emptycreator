@@ -9,7 +9,9 @@ RUN apt-get install dialog apt-utils -y
 
 RUN apt-get install haskell-platform -y
 
-RUN curl https://nixos.org/nix/install | sh
+#RUN curl https://nixos.org/nix/install | sh
+
+RUN /bin/bash -c "$(curl -fsSL https://nixos.org/nix/install)"
 
 USER gitpod
 
