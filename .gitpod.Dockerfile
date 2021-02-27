@@ -7,7 +7,9 @@ RUN sudo apt-get -y upgrade
 
 RUN sudo apt-get install -y haskell-platform
 
-RUN bash -c "curl -L https://nixos.org/nix/install | sh"
+RUN bash -c "sudo curl -L https://nixos.org/nix/install | sh"
+
+RUN bash -c ". ~/.nix-profile/etc/profile.d/nix.sh"
 
 
 # Install custom tools, runtime, etc. using apt-get
