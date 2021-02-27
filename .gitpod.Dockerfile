@@ -2,12 +2,12 @@ FROM gitpod/workspace-full
 
 USER root
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
+RUN apt-get update -y
+RUN apt-get upgrade -y
 
-RUN apt-get install -y apt-utils
+RUN apt-get install dialog apt-utils -y
 
-RUN apt-get install -y haskell-platform
+RUN apt-get install haskell-platform -y
 
 RUN curl https://nixos.org/nix/install | sh
 
