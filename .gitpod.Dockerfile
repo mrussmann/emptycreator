@@ -9,9 +9,11 @@ RUN sudo apt-get install -y apt-utils
 
 RUN sudo apt-get install -y haskell-platform
 
+RUN curl https://nixos.org/nix/install | sh
+
 # RUN bash -c "sudo curl -L https://nixos.org/nix/install | sh"
 
-CMD "sudo curl -L https://nixos.org/nix/install | sh"
+# CMD "sudo curl -L https://nixos.org/nix/install | sh"
 
 # RUN bash -c ". ~/.nix-profile/etc/profile.d/nix.sh"
 
