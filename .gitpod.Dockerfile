@@ -2,8 +2,8 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN sudo apt-get update
-RUN sudo apt-get upgrade
+RUN sudo apt-get -y update
+RUN sudo apt-get -y upgrade
 
 RUN sudo apt-get install -y haskell-platform
 
