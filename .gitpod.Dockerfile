@@ -5,7 +5,7 @@ USER gitpod
 RUN sudo apt update
     sudo apt upgrade
 
-RUN sudo apt-get install -y haskell-platform -y
+RUN sudo apt-get install -y haskell-platform
 
 RUN bash -c "curl -L https://nixos.org/nix/install | sh"
 
