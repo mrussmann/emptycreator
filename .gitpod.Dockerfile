@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN sudo apt-get install haskell-platform
+RUN sudo apt-get install -y haskell-platform
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
